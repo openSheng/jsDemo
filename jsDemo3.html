@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- 纠正乱码 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+</head>
+<body>
+<input type="button" value="确定4" name="btn1" onclick="alert('hello');alert('nihao')">
+<input type="button" value="确定1" name="btn1" onclick="alert('hello');alert('nihao');">
+<!-- Onclick事件可以执行For循环等语句 -->
+<input type="button" value="确定2" name="btn1" onclick="for(var i=0;i<3;i++){alert('hello'+i);alert('nihao'+i);}">
+<!-- Onclick事件属性最后的分号可以省略 -->
+<input type="button" value="确定3" name="btn1" onclick="for(var i=0;i<3;i++){alert('hello'+i);alert('nihao'+i)}">
+<!-- onclick事件属性中非字符串处不能用中文符号 -->
+<!-- <input type="button" value="确定" name="btn1" onclick="for(var i=0;i<3;i++){alert('hello'+i);alert('nihao'+i)；}"> -->
+
+</body>
+</html>
