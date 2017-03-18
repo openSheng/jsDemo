@@ -1,0 +1,28 @@
+<script type="text/javascript">
+// 字符串数组使用For循环格式一
+	var row =['zhangsab','liisi',"wangwu"];
+	document.write('共有'+row.length+'个元素'+'<br>');
+	for (var i = 0; i <row.length;i++){
+		document.write(row[i]+'<br>');
+	}
+	document.write("hello");
+	document.write("<br>");
+
+// 字符串数组使用For循环格式二
+	var row1 =['zhangsab','liisi',"wangwu",'rrrr'+'sssss'+'HHHH',"GGGGGGGGGGGGG"];
+	document.write('共有'+row1.length+'个元素'+'<br>');
+	for (var i in row1){
+		document.write(row1[i]+'<br>');
+	}
+	var row2=new Array("AAAAA","BBBB","CCCC","DDDD");
+	document.write('共有'+row2.length+"个元素");
+	for(var j=0;j<row2.length;j++){
+		document.write(row2[j]+"<br>");
+		document.write("<hr>"+"<br>");
+	}
+	var row3=new Array("111111111","2222","33333333333","444444","555555");
+	for(var j in row3){
+		document.write(row3[j]+"<br>");
+	}
+
+</script>
