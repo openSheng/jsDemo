@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <title>window.onload示例</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<script type="text/javascript">
+		window.onload =function(){
+			alert('page already inserted');
+		}
+		alert("page isn't already inserted");//先加载此alert提示框，alert阻塞线程，此时页面时空白的；按其确定后加载body标签内容
+    //alert会阻塞页面的线程，所以页面不会继续加载，直到点击确定后才会继续执行
+	</script>
+<!--     <script type="text/javascript">
+        window.onload = function(){
+            alert('页面加载完成');
+        }
+        alert('页面尚未加载完成,页面内容不显示');
+    </script>
+ --></head>
+<body>
+<!-- onload 事件会在页面或图像加载完成后立即发生。
+window.onload事件会在页面加载完成后触发。 -->
+页面内容
+</body>
+</html>
